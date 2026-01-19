@@ -409,8 +409,6 @@ En este punto podemos a ir a Discover y seleccionar el Data View "DFIR Alerts Au
 
 ## Conclusión
 
-## Epílogo
-
 En este taller hemos construido un flujo completo y realista de detección de incidentes de seguridad sobre la pila ELK, partiendo de logs en bruto y llegando hasta la generación de alertas automáticas persistentes.
 
 A lo largo del proceso hemos trabajado con la arquitectura real del stack, configurado la ingesta de eventos de autenticación, normalizado los datos, realizado análisis manual y, finalmente, automatizado ese análisis mediante una regla de detección basada en comportamiento. El resultado no depende de la observación constante del analista, sino que convierte los eventos en conocimiento accionable.
