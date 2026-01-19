@@ -1,0 +1,42 @@
+site_name: Taller ELK 
+site_url: https://joperpu.github.io/tallerELK
+theme:
+  name: material
+  language: es
+  favicon: assets/images/logo.ico
+  features:
+    - content.code.copy
+  palette: 
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: "assets/images/logo.png"
+nav:
+  - Desarrollo del taller: tallerELK.md
+
+copyright: "2026 José María Pérez Puentes - Licencia CC BY-NC-SA 4.0"
+
+extra:
+  generator: true
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - md_in_html
+  - admonition
+  - pymdownx.details
