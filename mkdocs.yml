@@ -20,8 +20,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   logo: "assets/images/logo.png"
-nav:
-  - Desarrollo del taller: tallerELK.md
+
 
 copyright: "2026 José María Pérez Puentes - Licencia CC BY-NC-SA 4.0"
 

@@ -1,1 +1,0 @@
-# DFIR con ELK: de los logs al análisis en tiempo real
