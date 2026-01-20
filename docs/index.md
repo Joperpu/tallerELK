@@ -2,16 +2,18 @@
 
 ## Introducción
 
-Enlace a la presentación de diapositivas
+Este taller forma parte de la décima edición de la Security High School, celebrada los días 22 y 23 de febrero de 2026 en el IES Fidiana y la Universidad de Córdoba.
+
+[Enlace](assets/presentacion.pdf) a la presentación de diapositivas.
 
 ## Antes de empezar
 
-- Se recomienda realizar el taller en una máquina virtual Ubuntu Server con mínimo 8 GB de RAM y 10 GB de almacenamiento libres.
+- Se recomienda realizar el taller en una máquina virtual [Ubuntu Server](https://ubuntu.com/download/server) con mínimo 8 GB de RAM y 10 GB de almacenamiento libres.
 - Es importante contar con acceso a un fichero de logs de autenticación (Linux), por ejemplo `/var/log/auth.log`.
 
 ## Instalación de Docker y Docker Compose
 
-A continuación se detallan todos los comandos necesarios, según el sistema operativo, para instalar Docker y Docker Compose.
+A continuación se detallan todos los comandos necesarios para instalar Docker y Docker Compose en Ubuntu Server.
 
 Instalamos dependencias básicas:
 
@@ -66,7 +68,6 @@ docker run --rm hello-world
 ```bash
 mkdir -p elk-taller/logstash/pipeline
 mkdir -p elk-taller/filebeat
-cd elk-taller
 ```
 
 La estructura final será:
