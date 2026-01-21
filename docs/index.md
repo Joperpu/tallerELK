@@ -82,13 +82,6 @@ elk-taller/
     └── filebeat.yml
 ```
 
-### Corregir permisos de Filebeat
-
-```bash
-sudo chown root:root filebeat/filebeat.yml
-sudo chmod go-w filebeat/filebeat.yml
-```
-
 ## Despliegue del stack ELK
 
 docker-compose.yml
@@ -199,6 +192,13 @@ output {
 }
 ```
 
+### Corregir permisos de Filebeat
+
+```bash
+sudo chown root:root filebeat/filebeat.yml
+sudo chmod go-w filebeat/filebeat.yml
+```
+
 ## Arrancar y comprobar servicios
 
 Levantamos los contenedores:
@@ -210,7 +210,7 @@ docker compose up -d
 Comprobamos el estado de todos ellos:
 
 ```bash
-docker compose ps
+docker ps
 ```
 
 Comprobamos que Elasticsearch se encuentra funcionando:
@@ -375,8 +375,7 @@ Para que la alerta sea persistente y analizable, se almacenará como un document
 
 1.	En Actions, pulsar Add action
 2.	Seleccionar Index
-3.	Elegir el conector creado previamente
-4.	Configurar el índice de destino como `dfir-alerts-auth`
+3.  Creamos el conector con nombre DFIR Auth e índice `dfir-alerts-auth`
 
 En el campo Document to index, creamos el siguiente JSON:
 
